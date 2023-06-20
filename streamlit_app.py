@@ -33,7 +33,7 @@ try:
        streamlit.dataframe(fruityvice_normalized)
 except URLError as e:
         
-streamlit.write('The user entered ', fruit_choice)
+streamlit.write('The user entered ',fruit_choice)
 # import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" +fruit_choice)
 
