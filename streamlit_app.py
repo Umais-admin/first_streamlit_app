@@ -53,5 +53,9 @@ if streamlit.button('Get Fruit Load List'):
    my_data_rows = get_fruit_load_list()
    streamlit.dataframe(my_data_rows)
 streamlit.stop()
+def insert_snowflake(new_fruit):
+    with my_cnx.cursor() as_my_cur:
+         my_cur.execute("insert into fruit_load_list values('"jackfruit","papaya","kiwi"."guava"')")
+         return " Thanks for adding " + new_fruit 
 
 
